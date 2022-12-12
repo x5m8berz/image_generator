@@ -35,7 +35,7 @@ const generateimage = async (req,res) => {
 
         res.status(400).json({
             success: false,
-            error: 'Image could not be generated'
+            error: 'Rate limit reached for images per minute. Limit: 20/1min'
         })
     }
 }
